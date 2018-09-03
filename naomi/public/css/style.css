@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body {
+    color: #fff;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 200vh;
+    margin: 0;
+}
+
+.infotitle{
+    margin-left: 50px;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.infotext{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 100;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.infotitle:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 26.5%;
+    border-bottom: 1px solid;
+    margin-top: 15px;
+    margin-left: 50px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.infotitle:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+    -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+}
+
+.home-container{
+    background-image: url("../img/homewallpaper.png") !important; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-info-container{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.homeLogo{
+    width: 50% !important;
+    height: 50% !important;
+    transition: 1s ease;
+}
+
+.homeLogo:hover{
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
+}
+
+.homeBanner{
+    width: 65%;
+    margin-left: 20%;
+}
+
+
